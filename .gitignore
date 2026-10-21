@@ -2,3 +2,4 @@ Skills/global
 .DS_Store
 .env
 standards/
+.gstack/
