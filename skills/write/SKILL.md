@@ -3,7 +3,7 @@ name: write
 description: Write text that will be read, for a human reader (blog posts, essays, docs, updates) or for an agent (specs, prompts, skills, CLAUDE.md, briefs to another agent). Applies the user's six writing principles and summary rule, then adjusts them for the reader, because an agent reader fails in different ways from a human one. Use when drafting or editing anything meant to be read, or when the user invokes /write. Not for words said out loud; use speak for those.
 ---
 
-<!-- Review note: the 原文 quotes are Nick's own words. Everything else in this file is Claude's draft built on them. Delete this comment once reviewed. -->
+<!-- Review note: the quotes marked "Nick:" are Nick's own words, translated from his Chinese notes. Everything else in this file is Claude's draft built on them. Delete this comment once reviewed. -->
 
 # Write
 
@@ -11,7 +11,7 @@ Writing moves a judgment from the writer's head to a reader who can't ask what y
 
 The reader decides everything else. A human reader shares your culture, skims, and stops when bored. An agent reader has only the page and its own average taste, reads every word in order, and fills each gap with the average instead of asking. The same six principles serve both, but they show up differently.
 
-Write in the language the user writes in. These principles hold in Chinese and English alike.
+Write in the language the user writes in. These principles hold in any language.
 
 ## 1. Name the reader
 
@@ -24,32 +24,32 @@ If the reader isn't clear from context, ask one question. Why: every later choic
 
 ## 2. The principles
 
+Each principle opens with Nick's own words, translated from his notes, marked "Nick:". The lines under each quote are Claude's draft.
+
 ### Summary first
 
-> 原文：文章必须有摘要，面对读者写作需要 > 也可以用 AI 生成
+> Nick: Every article must have a summary. Write it for the reader. AI can generate it.
 
 Every piece opens with a summary written for the reader, not for the writer. AI can draft it; the writer checks it says what the piece argues.
 
 ### 1. The middle view
 
-> 原文：
-> - 避免过于宏观。抬头看路，但不试图只讲形而上的东西，比如宏观经济，时政社会变化或者行业分析等。这类内容看起来宏大，但对实际生活帮助不大，且很难改变人们的行为。
-> - 避免过于微观。低头走路，但不只关注脚下，比如只讲某个产品的功能细节，或者聚焦在某一次成功的分析。这类内容实操性很强，但是和大多数人的情境不符，且忽略了环境变化。
-> - 选择中观视角：是指在两者之间的低空飞行，可以起飞也可以降落，是一般人能达到的境界，既能告诉前方有什么，又能指导如何抵达。比如《零售的哲学》中铃木敏文如何洞察用户需求的部分，既有案例又有其方法论。
-
-Fly low. Too high (macroeconomics, industry analysis) looks grand but changes no one's behavior. Too low (one product's features, one lucky success) is practical but fits few readers and ignores how conditions change. The middle tells the reader what lies ahead and how to get there, with a case and the method behind it.
+> Nick:
+> - Avoid the too-macro. Look up at the road, but don't talk only about the abstract: the macroeconomy, political and social change, or industry analysis. It looks grand, but it does little for real life and rarely changes how people act.
+> - Avoid the too-micro. Watch your step, but don't look only at your feet: one product's feature details, or one successful analysis. It is practical, but it doesn't fit most people's situation, and it ignores how the environment changes.
+> - Choose the middle view: fly low between the two, able to take off and to land. Ordinary people can reach it. It tells readers what lies ahead and how to get there. Example: the part of Toshifumi Suzuki's *The Philosophy of Retail* on how he reads customer needs, which has both cases and his method.
 
 Test: the piece names both a direction and a step the reader can take.
 
 ### 2. News ≠ New
 
-> 原文：News ≠ New
+> Nick: News ≠ New.
 
 Recent is not the same as new to the reader. Spend words on what changes the reader's picture, not on what just happened.
 
 ### 3. Bias over completeness
 
-> 原文：偏见 > 全面
+> Nick: Bias > comprehensiveness.
 
 Take a position. A piece that covers every side lands on the average, and the average is what the reader already has.
 
@@ -57,24 +57,21 @@ Test: the piece argues one sentence a smart reader could disagree with.
 
 ### 4. Start from a person
 
-> 原文：从人物下手
+> Nick: Start from a person.
 
-Open with a specific person in a specific situation, then draw the idea out of them, as the 铃木敏文 example in principle 1 does. Readers follow people; an abstraction alone loses them.
+Open with a specific person in a specific situation, then draw the idea out of them, as the Suzuki example in principle 1 does. Readers follow people; an abstraction alone loses them.
 
 ### 5. Two weeks to start, never finished
 
-> 原文：两周时间起，但永远未完成
+> Nick: Two weeks to start, but never finished.
 
 Give a piece at least two weeks before it goes out, so you reread it cold. After it goes out, keep revising: publishing is a version, not an end.
 
 ### 6. Content words over adverbs
 
-> 原文：避免使用副词、实词（名词、动词）越多的（扭捏含糊的废话论点一般副词多，干练准确的确凿信息一般实词多）
+> Nick: Avoid adverbs. Use more content words (nouns, verbs). Hedged, vague, empty arguments tend to have many adverbs; crisp, precise, solid information tends to have many content words.
 
-Vague, hedged arguments are heavy in adverbs; precise information is heavy in nouns and verbs. Replace each adverb with the fact it stands in for, or cut it.
-
-- English: really, very, quite, simply, basically, significantly, deeply, arguably.
-- 中文：非常、其实、真正、基本上、某种程度上、深刻地、可能、相当。
+Replace each adverb with the fact it stands in for, or cut it. Watch for intensifiers and hedges: really, very, quite, actually, simply, basically, significantly, deeply, arguably, to some extent. Their equivalents show up in any language.
 
 "Latency improved significantly" → "p95 latency fell from 800 ms to 120 ms".
 
@@ -131,6 +128,6 @@ Notes
 
 ## Sources
 
-- The six principles and the summary rule: Nick's own writing notes (the 原文 quotes above).
-- 铃木敏文《零售的哲学》, cited in principle 1 as the model of the middle view.
+- The six principles and the summary rule: Nick's own writing notes, translated (the "Nick:" quotes above).
+- Toshifumi Suzuki, *The Philosophy of Retail*, cited in principle 1 as the model of the middle view.
 - Writing for agents draws on Anthropic's "Skill authoring best practices": only add context the model doesn't have, write descriptions that say what and when, match specificity to fragility, give input/output examples, and test with a fresh instance. https://platform.claude.com/docs/en/agents-and-tools/agent-skills/best-practices
