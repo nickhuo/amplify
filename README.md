@@ -36,6 +36,7 @@ A meta tool produces a judgment about an artifact, or decides the conditions und
 | [`correction-to-rule`](skills/correction-to-rule/SKILL.md) | Reads recent Claude Code and Codex transcripts, finds the turns where I corrected an agent, clusters the recurring misses, and proposes a rule or a standards file for each. Writes only what I approve, and proposes pruning standards that stopped firing. | Defining what's good, with a learning loop |
 | [`best-practice`](skills/best-practice/SKILL.md) | Before a consequential choice in an established craft (typography, experimentation, agent design), finds what the best practitioners do and why, then applies it and explains it. Proposes new sources; never edits my trusted list. | Bringing in an outside standard where I don't have one yet |
 | [`speak`](skills/speak/SKILL.md) | Writes English meant to be said out loud (interview answers, talks), structured with Patrick Winston's "How to Speak" and checked against Ogden's Basic English 850 by `check.py`. | One piece of judgment, encoded as a skill |
+| [`write`](skills/write/SKILL.md) | Writes text meant to be read, for people (posts, docs) or for agents (specs, prompts, skills). Applies my six writing principles and summary rule, and says how each changes when the reader is an agent. | Defining what's good, for the text agents read |
 
 `Prompt/Global Instruction for AI Assistance.md` is the global instruction I give my assistants: tone, confidence levels, and a four-stage protocol that makes the agent write its own definition of done before drafting.
 
@@ -78,6 +79,7 @@ Invoke a skill by name, or let the agent pick it up from the skill's description
 - `/correction-to-rule` after a few weeks of agent work, to turn your corrections into standards.
 - `/best-practice`, or let it run on its own before a choice that shapes the result.
 - `/speak` for an interview answer or a talk.
+- `/write` for a post or doc, or for a spec, prompt, or skill another agent will read.
 
 The scripts also run on their own:
 
@@ -93,6 +95,7 @@ skills/
   best-practice/       SKILL.md
   correction-to-rule/  SKILL.md, classify.md, extract_pairs.py, classify_decisions.py
   speak/               SKILL.md, check.py, words.txt
+  write/               SKILL.md
 Prompt/                Global instruction for AI assistants
 ```
 
