@@ -2,7 +2,7 @@
 
 <!-- Review note: Claude drafted this file from Nick's Nov 10, 2026 study of how Linear, Superhuman and The Browser Company write. None of it is Nick's own wording yet. Delete this comment once reviewed. -->
 
-`SKILL.md` decides what to say. This file decides how it sounds on a given surface. When the two conflict, `SKILL.md` wins.
+`SKILL.md` decides what to say. This file decides how it sounds on a given surface. When the two conflict, `SKILL.md` wins, except for the shape of a resume bullet or a release note, which this file sets.
 
 These rules are for human readers. For a spec, prompt, or skill, section 3 of `SKILL.md` governs instead.
 
@@ -13,7 +13,7 @@ The model: borrow the evidence habits of Linear, Superhuman and The Browser Comp
 1. **Claim first, in ten words or fewer.** The summary's first sentence states the claim, the way Linear states its thesis lines: "We replaced purpose with metrics."
 2. **A result carries a number, a unit and a time frame, or it goes.** Superhuman: product-market fit score "22%" in 2017, "58%" three quarters later. Use only numbers you can defend when someone asks how you measured them.
 3. **Verb and object, few adjectives.** Plain is not vague: the verb still needs an object and a result.
-4. **Methods as recipes.** Give the exact prompt, rubric, config, or question, not a summary of it. Superhuman published its survey question word for word.
+4. **Methods as recipes.** Give the exact prompt, rubric, config, or question, not a summary of it, with keys, tokens, and private data removed. Superhuman published its survey question word for word.
 5. **Ban list.** excited, thrilled, ever made, whopping, game-changer, revolutionary, exclamation marks, emoji in titles. Why: these are the weakest lines in the writing studied.
 
 ## Resume bullets

@@ -71,7 +71,7 @@ Give a piece at least two weeks before it goes out, so you reread it cold. After
 
 > Nick: Avoid adverbs. Use more content words (nouns, verbs). Hedged, vague, empty arguments tend to have many adverbs; crisp, precise, solid information tends to have many content words.
 
-Replace each adverb with the fact it stands in for, or cut it. Watch for intensifiers and hedges: really, very, quite, actually, simply, basically, significantly, deeply, arguably, to some extent. Their equivalents show up in any language.
+Replace each adverb with the fact it stands in for, or cut it. Watch for intensifiers and hedges: really, very, quite, actually, simply, basically, significantly, deeply, arguably, to some extent. Their equivalents show up in any language. Keep adverbs that set negation, scope, or timing (never, only, before), because cutting them changes the meaning.
 
 "Latency improved significantly" → "p95 latency fell from 800 ms to 120 ms".
 
@@ -101,18 +101,19 @@ Match how strict you are to how fragile the task is: exact commands where one wr
 
 Reread the draft as the reader from step 1, someone who doesn't know the user's work.
 
+For an article (post, essay, doc, retrospective):
+
 1. The summary is at the top and states what the piece argues.
 2. Middle view: there is a direction and a step.
 3. News ≠ New: name what the reader learns that they didn't know.
 4. Bias: name the sentence a smart reader could disagree with.
 5. Person: the piece starts from someone specific.
 6. Adverbs: list every adverb. Replace each with a fact or cut it, and say which.
-
-For a human reader, also:
-
 7. The draft passes `style.md`: the rules for every surface, plus the ones for its own surface.
 
-For an agent reader, also:
+For a resume bullet or release note, check 6 and the `style.md` rules for that surface. Those surfaces have a fixed shape with no room for a summary, a person, or an argument.
+
+For an agent reader, check 6 and the agent column of the table in section 3 in place of checks 1–5, then:
 
 8. Hand the text to a fresh agent with no other context, run it on a real task, and fix what it gets wrong. Why: you fill in what isn't on the page, so only a cold reader finds the gaps.
 9. The definition of done is checkable without asking the user.
