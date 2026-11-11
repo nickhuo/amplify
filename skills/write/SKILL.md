@@ -17,7 +17,7 @@ Write in the language the user writes in. These principles hold in any language.
 
 Before drafting, write one line: who reads this, what they already know, and what they should know or do after.
 
-- **Human** → a person reading a post, doc, or update.
+- **Human** → a person reading a post, doc, or update. Name the surface too (resume, post, retrospective, release notes) and read its rules in `style.md`, next to this file.
 - **Agent** → a model acting on a spec, prompt, skill, `CLAUDE.md`, or brief. Also read section 3.
 
 If the reader isn't clear from context, ask one question. Why: every later choice, from the summary to the examples, depends on who reads it.
@@ -108,15 +108,19 @@ Reread the draft as the reader from step 1, someone who doesn't know the user's 
 5. Person: the piece starts from someone specific.
 6. Adverbs: list every adverb. Replace each with a fact or cut it, and say which.
 
+For a human reader, also:
+
+7. The draft passes `style.md`: the rules for every surface, plus the ones for its own surface.
+
 For an agent reader, also:
 
-7. Hand the text to a fresh agent with no other context, run it on a real task, and fix what it gets wrong. Why: you fill in what isn't on the page, so only a cold reader finds the gaps.
-8. The definition of done is checkable without asking the user.
+8. Hand the text to a fresh agent with no other context, run it on a real task, and fix what it gets wrong. Why: you fill in what isn't on the page, so only a cold reader finds the gaps.
+9. The definition of done is checkable without asking the user.
 
 ## 5. Output
 
 ```
-Reader: <human | agent> · <what they know> · <what they should know or do after>
+Reader: <human: surface | agent> · <what they know> · <what they should know or do after>
 
 <the draft, summary first>
 
@@ -130,4 +134,5 @@ Notes
 
 - The six principles and the summary rule: Nick's own writing notes, translated (the "Nick:" quotes above).
 - Toshifumi Suzuki, *The Philosophy of Retail*, cited in principle 1 as the model of the middle view.
+- Style rules per surface are in `style.md`, with their own sources.
 - Writing for agents draws on Anthropic's "Skill authoring best practices": only add context the model doesn't have, write descriptions that say what and when, match specificity to fragility, give input/output examples, and test with a fresh instance. https://platform.claude.com/docs/en/agents-and-tools/agent-skills/best-practices
